@@ -9,7 +9,7 @@ const: {
 
 parameter: {
 	image:                *"registry.cn-hangzhou.aliyuncs.com/dtweave/vela-workflow" | string
-	version:              *"0.6.0" | string
+	version:              *"v0.6.0" | string
 	imagePullPolicy:      *"IfNotPresent" | "Never" | "Always"
 	concurrentReconciles: *4 | int
 	kubeQPS:              *50 | int
