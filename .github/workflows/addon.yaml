@@ -28,7 +28,7 @@ jobs:
 
       - name: package-addon-gen-index
         run: |
-          cd ./addons/
+          cd ./dw_addons/
           go run ../hack/addons/syn_addon_package.go ./ ${{ env.URL }}/official
           ls ./
           cat ./index.yaml
@@ -36,15 +36,15 @@ jobs:
           mv ./index.yaml ../docs/official/
           mv ./*.tgz ../docs/official/
 
-      - name: package-addon-gen-index-experimental
-        run: |
-          cd ./experimental/addons/
-          go run ../../hack/addons/syn_addon_package.go ./ ${{ env.URL }}/experimental
-          ls ./
-          cat ./index.yaml
-          mkdir -p ../../docs/experimental
-          mv ./index.yaml ../../docs/experimental/
-          mv ./*.tgz ../../docs/experimental/
+#      - name: package-addon-gen-index-experimental
+#        run: |
+#          cd ./experimental/addons/
+#          go run ../../hack/addons/syn_addon_package.go ./ ${{ env.URL }}/experimental
+#          ls ./
+#          cat ./index.yaml
+#          mkdir -p ../../docs/experimental
+#          mv ./index.yaml ../../docs/experimental/
+#          mv ./*.tgz ../../docs/experimental/
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
