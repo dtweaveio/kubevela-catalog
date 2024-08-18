@@ -14,7 +14,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     env:
-      URL: https://kubevela.github.io/catalog
+      URL: https://github.com/dtweaveio/kubevela-catalog
       GO_VERSION: 1.19
     runs-on: ubuntu-22.04
     steps:
