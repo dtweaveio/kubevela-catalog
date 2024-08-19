@@ -1,0 +1,9 @@
+name: kube-blocks
+description: KubeBlocks addon for KubeVela.
+icon: "https://kubeblocks.io/img/logo.png"
+invisible: false
+tags:
+  - my-tag
+version: 0.9.0
+dependencies:
+  - name: fluxcd
