@@ -1,4 +1,4 @@
-name: kube-blocks
+name: kubeblocks
 description: KubeBlocks addon for KubeVela.
 icon: "https://kubeblocks.io/img/logo.png"
 invisible: false
