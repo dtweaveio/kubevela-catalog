@@ -12,7 +12,7 @@ imageReflectorController: {
 	dependsOn: ["fluxcd-ns"]
 	properties: {
 		imagePullPolicy: "IfNotPresent"
-		image:           _base + "dtweave/image-reflector-controller:v0.30.0"
+		image:           "registry.cn-hangzhou.aliyuncs.com/dtweave/image-reflector-controller:v0.30.0"
 		env: [
 			{
 				name:  "RUNTIME_NAMESPACE"

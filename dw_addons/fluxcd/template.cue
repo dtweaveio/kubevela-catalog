@@ -1,20 +1,18 @@
 package main
 
-import "strings"
-
 // controller images prefix
-_base:    *"" | string
-registry: *"" | string
-if parameter.registry != _|_ {
-	registry: parameter.registry
-}
-
-if registry != "" && !strings.HasSuffix(registry, "/") {
-	_base: registry + "/"
-}
-if registry == "" || strings.HasSuffix(registry, "/") {
-	_base: registry
-}
+//_base:    *"" | string
+//registry: *"" | string
+//if parameter.registry != _|_ {
+//	registry: parameter.registry
+//}
+//
+//if registry != "" && !strings.HasSuffix(registry, "/") {
+//	_base: registry + "/"
+//}
+//if registry == "" || strings.HasSuffix(registry, "/") {
+//	_base: registry
+//}
 
 _targetNamespace: parameter.namespace
 

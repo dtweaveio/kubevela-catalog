@@ -12,7 +12,7 @@ imageAutomationController: {
 	dependsOn: ["fluxcd-ns"]
 	properties: {
 		imagePullPolicy: "IfNotPresent"
-		image:           _base + "dtweave/image-automation-controller:v0.36.0"
+		image:           "registry.cn-hangzhou.aliyuncs.com/dtweave/image-automation-controller:v0.36.0"
 		env: [
 			{
 				name:  "RUNTIME_NAMESPACE"

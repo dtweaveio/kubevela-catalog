@@ -12,7 +12,7 @@ kustomizeController: {
 	dependsOn: ["fluxcd-ns"]
 	properties: {
 		imagePullPolicy: "IfNotPresent"
-		image:           _base + "dtweave/kustomize-controller:v1.1.0"
+		image:           "registry.cn-hangzhou.aliyuncs.com/dtweave/kustomize-controller:v1.1.0"
 		env: [
 			{
 				name:  "RUNTIME_NAMESPACE"
