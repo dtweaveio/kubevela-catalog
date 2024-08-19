@@ -5,11 +5,11 @@
 package main
 
 kubeblocksCharts: {
-	name: "kube-blocks"
+	name: "kubeblocks"
 	type: "helm"
 	properties: {
 		repoType: "helm"
-		url:      "https://apecloud.github.io/helm-charts"
+		url:      "https://charts.dtweave.com/kubevela"
 		chart:    "kubeblocks"
 		version:  "0.9.0"
 	}

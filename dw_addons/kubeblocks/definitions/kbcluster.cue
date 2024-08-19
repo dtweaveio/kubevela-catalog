@@ -74,7 +74,7 @@ template: {
 					}
 				}
 			}
-			if parameter["componentSpecs"] != _|_ {
+			if parameter["	componentSpecs"] != _|_ {
 				componentSpecs: [for v in parameter.componentSpecs {
 					name: v.name
 					if v.componentDef != _|_ {
